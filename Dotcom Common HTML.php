@@ -7,7 +7,6 @@
 	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
-	<!-- <link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/Oswald-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
 
 </head>
 <body>
@@ -54,7 +53,7 @@
 				<div class="col-12">
 					<div class="footer-bottom-text">
 						<div class="copy-right">
-							<p>© 2021 Elite Stone Fabrication</p>
+							<p>© <?php echo date('Y');?> Elite Stone Fabrication</p>
 						</div>
 						<div class="footer-bottom-link">
 							<ul>
@@ -77,6 +76,12 @@
 	<a href="javascript:void(0);" id="scrollToTop" class="scrolltop" title="Back To Top"><i class="fas fa-angle-double-up"></i></a>
 	<!-- Scroll To Top End -->
 
+	<!-- CTA  Button Start -->
+    <div class="cta-btn">
+        <a href="#" class="sec-btn" title="Shop Now"><span>Shop Now</span></a>
+    </div>
+    <!-- CTA  Button Start -->
+
 	<!-- Modal Start -->
 	<div class="modal common-popup" id="schedule_an_estimate_Modal">
 		<div class="modal-dialog">
@@ -96,32 +101,6 @@
 		</div>
 	</div>
 	<!-- Modal End -->
-
-	<!-- Inner Banner Start -->
-	<section class="main-banner inner-banner back-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2021/08/other-service-bg.jpg');">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-12">
-	                <div class="banner-content">
-	                    <h1 class="h1-title"><?php the_title(); ?></h1>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	<!-- Inner Banner End -->
-
-	<!-- 404 Page Section Start -->
-	<div class="inner-page-text error-404 not-found text-center">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<img width="1200" height="1003" src="<?php echo home_url(); ?>/wp-content/themes/aacann/assets/images/404.png" alt="404 Not Found!">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 404 Page Section End -->
-
+	
 </body>
 </html>
