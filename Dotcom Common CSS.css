@@ -1030,7 +1030,7 @@ select.form-input {
 .wpcf7 .wpcf7-spinner {
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 103%;
     transform: translate(0,-50%);
     margin: 0;
 }
@@ -1188,6 +1188,62 @@ input[type="number"]::-webkit-outer-spin-button {
     display: inline-block;
     width: auto !important;
 }
+
+.form-box {
+    position: relative;
+}
+
+.form-box.form-input-file .wpcf7-form-control-wrap {
+    padding-bottom: 20px;
+}
+
+.form-box.form-input-file input[type=file] {
+    position: relative;
+    width: 76px;
+    height: 73px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.form-box.form-input-file .input-file-icon {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 76px;
+    height: 73px;
+    background: var(--input-color);
+    border-radius: 13px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.form-box.form-input-file .input-file-icon:before, 
+.form-box.form-input-file .input-file-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 1px;
+    background-color: var(--black-color);
+}
+
+.form-box.form-input-file .input-file-icon:after {
+    width: 1px;
+    height: 30px;
+}
+
+.form-box.form-input-file span.input-file-text {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
 /*========== Form CSS End ==========*/
 
 /*==========Common CSS ==========*/
@@ -1207,14 +1263,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 body {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 26px;
     color: var(--common-color);
     font-family: var(--body-font);
 }
 
 p {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 26px;
     margin-bottom: 16px;
 }
 
@@ -1272,12 +1328,6 @@ a:hover {
 
 .grecaptcha-badge {
     display: none !important;
-}
-
-.main-seo-content .excerpt-content {
-    max-height: 320px;
-    margin-bottom: 30px;
-    overflow: hidden;
 }
 
 .wow {
@@ -1511,11 +1561,6 @@ a:hover {
 .modal-open {
     position: fixed;
     width: 100%;
-}
-
-.modal-body.overflow-text {
-    height: 600px;
-    padding: 30px;
 }
 
 .modal-content {
@@ -1862,6 +1907,84 @@ button.close:hover {
 
 /*==========Header CSS End==========*/
 
+/*==========Footer CSS Start==========*/
+.footer-bottom-box {
+    position: relative;
+    padding: 40px 0;
+}
+
+.footer-bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right,
+.footer-other-link {
+    display: inline-block;
+}
+
+.copy-right p,
+.footer-other-link p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.footer-bottom-link {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-bottom-link ul {
+    font-size: 0;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-bottom-link ul li {
+    font-size: 14px;
+    line-height: 24px;
+    display: inline-block;
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid var(--common-color);
+}
+
+.footer-bottom-link ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.footer-bottom-link ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--common-color);
+    transition: 0.3s;
+}
+
+.footer-bottom-link ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-other-link p a {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-other-link p a:hover {
+    color: var(--dark-color);
+}
+
+.footer-other-link p i {
+    color: var(--primary-color);
+}
+/*==========Footer CSS End==========*/
+
+
 /*==========Scroll To Top CSS Start==========*/
 .scrolltop {
     position: fixed;
@@ -1898,6 +2021,12 @@ button.close:hover {
 
 .main-banner.inner-banner .banner-content {
     text-align: center;
+}
+
+.main-banner.inner-banner .h1-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0;
 }
 
 .inner-page-text {
@@ -2063,6 +2192,12 @@ button.close:hover {
 .main-seo-content {
     position: relative;
     padding: 80px 0;
+}
+
+.main-seo-content .excerpt-content {
+    max-height: 320px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .excerpt-content p a {
@@ -2675,6 +2810,16 @@ a.prev.page-numbers {
     }
     .main-navigation ul ul li a {
         padding: 0;
+    }
+    .footer-bottom-text,
+    .copy-right,
+    .footer-other-link,
+    .footer-bottom-link {
+        display: block;
+        text-align: center;
+    }
+    .footer-bottom-link {
+        margin: 15px 0;   
     }
 }
 
