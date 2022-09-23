@@ -947,6 +947,16 @@ input[type=number] {
     border-radius: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .form-input::-webkit-input-placeholder,
 .input-text::-webkit-input-placeholder {
     color: var(--input-color);
