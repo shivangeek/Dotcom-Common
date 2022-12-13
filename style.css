@@ -1575,6 +1575,11 @@ a:hover {
     --bs-gutter-x : var(--gutter);
     --bs-gutter-y : var(--gutter);
 }
+
+.slick-slider [class*=col-] {
+    padding-right: calc(var(--gutter) * .5);
+    padding-left: calc(var(--gutter) * .5);
+}
 /*==========Common CSS End==========*/
 
 /*========== Modal Popup CSS Start ==========*/
