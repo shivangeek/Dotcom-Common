@@ -1269,7 +1269,7 @@ input[type="number"]::-webkit-outer-spin-button {
     --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
     --body-font: 'Roboto';
     --title-font: 'Roboto';
-    --bs-gutter-x: 30px;
+    --gutter: 30px;
 } 
 
 body {
@@ -1561,6 +1561,11 @@ a:hover {
     left: 50%;
     transform: translate(-50%);
     width: auto;
+}
+
+.row {
+    --bs-gutter-x : var(--gutter);
+    --bs-gutter-y : var(--gutter);
 }
 /*==========Common CSS End==========*/
 
