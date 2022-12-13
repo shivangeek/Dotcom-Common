@@ -1571,14 +1571,22 @@ a:hover {
     width: auto;
 }
 
-.row {
+.container, 
+.container-fluid, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+.container-xxl {
     --bs-gutter-x : var(--gutter);
-    --bs-gutter-y : var(--gutter);
+    --container-space: calc(var(--gutter) / 2);
+    padding-right: var(--container-space);
+    padding-left: var(--container-space);
 }
 
 .slick-slider [class*=col-] {
-    padding-right: calc(var(--gutter) * .5);
-    padding-left: calc(var(--gutter) * .5);
+    padding-right: calc(var(--gutter) / 2);
+    padding-left: calc(var(--gutter) / 2);
 }
 /*==========Common CSS End==========*/
 
@@ -2746,7 +2754,6 @@ a.prev.page-numbers {
     }
     .site-header .container {
         max-width: 100%;
-        padding: 0 30px;
     }
     .site-branding {
         position: fixed;
@@ -2904,16 +2911,21 @@ a.prev.page-numbers {
 }
 
 @media screen and (max-width: 575px) {
+    .container, 
+    .container-fluid, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        --container-space: calc(var(--gutter));
+    }
     .thank-text {
         padding-top: 80px;
     }
     .thank-text:before {
         width: 57px;
         height: 61px;
-    }
-    .container,
-    .container-fluid {
-        padding: 0 30px;
     }
     .privacy-content ol, 
     .privacy-content ul,
@@ -2936,10 +2948,17 @@ a.prev.page-numbers {
 }
 
 @media screen and (max-width: 400px) {
-    .container,
-    .container-fluid,
+    .container, 
+    .container-fluid, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        --container-space: calc(var(--gutter) / 2);
+    }
     .site-header .container {
-        padding: 0 15px;
+        --container-space: calc(var(--gutter) / 2);
     }
     .modal-dialog {
         width: calc(100vw - 30px);
