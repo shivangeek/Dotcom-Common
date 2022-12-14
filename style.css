@@ -1584,6 +1584,10 @@ a:hover {
     padding-left: var(--container-space);
 }
 
+.row {
+    --bs-gutter-x : var(--gutter);
+}
+
 .slick-slider [class*=col-] {
     padding-right: calc(var(--gutter) / 2);
     padding-left: calc(var(--gutter) / 2);
