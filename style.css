@@ -1676,6 +1676,12 @@ button.close:hover {
 .common-popup-text::-webkit-scrollbar-track {
     background: #cccccc;
 }
+
+@media (prefers-reduced-motion:no-preference) {
+    :root {
+        scroll-behavior: unset !important;
+    }
+}
 /*========== Modal Popup CSS End ==========*/
 
 /*==========Slider Css End==========*/
