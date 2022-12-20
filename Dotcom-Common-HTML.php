@@ -78,7 +78,7 @@
 
 	<!-- CTA  Button Start -->
     <div class="cta-btn">
-        <a href="#" class="sec-btn" title="Shop Now"><span>Shop Now</span></a>
+        <a href="#" class="sec-btn" data-bs-toggle="modal" data-bs-target="#schedule_an_estimate_Modal" title="Schedule an Estimate"><span>Schedule an Estimate</span></a>
     </div>
     <!-- CTA  Button Start -->
 
@@ -88,7 +88,7 @@
 			<div class="modal-content">
 				<div class="popup-title">
 					<h2 class="h2-title">Schedule an <span>Estimate</span></h2>
-					<button type="button" class="close close-popup" data-dismiss="modal"><i class="fas fa-times"></i></button>
+					<button type="button" class="close close-popup" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
 				</div>
 				<div class="common-popup-overflow">
 					<div class="common-popup-text" data-simplebar>
