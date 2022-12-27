@@ -3,10 +3,10 @@
 <head>
 	<title>Common HTML</title>
 
-	<link rel="prefetch" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="prefetch" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="prefetch" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="prefetch" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo home_url();?>/wp-content/themes/elite-stone/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
 
 </head>
 <body>
