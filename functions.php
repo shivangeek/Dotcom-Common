@@ -164,7 +164,7 @@ function oakmont_scripts() {
 	wp_enqueue_script('oakmont-wow-min', get_template_directory_uri() . '/assets/js/wow.min.js', array(), '20151215', true);
 	wp_enqueue_script('oakmont-font-awesome-min', get_template_directory_uri() . '/assets/js/font-awesome.min.js', array(), '20151215', true);
 	wp_enqueue_script('oakmont-custom', get_template_directory_uri() . '/assets/js/custom.js', array(), rand(1000, 10000), true);
-	wp_localize_script('oakmont-custom', 'custom_call', ['ajaxurl' => admin_url('admin-ajax.php')]);
+	wp_localize_script('oakmont-custom', 'custom_call', ['ajaxurl' => admin_url('admin-ajax.php'), 'homeurl' => home_url()]);
 
 	wp_enqueue_script( 'oakmont-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -277,27 +277,11 @@ function add_custom_taxonomies() {
 	  ),
 	));
   }
-  add_action( 'init', 'add_custom_taxonomies', 0 );
+add_action( 'init', 'add_custom_taxonomies', 0 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * Send AJAX response
+ */
 add_action('wp_ajax_gallery_tabbing','gallery_image_tabbing');
 add_action( 'wp_ajax_nopriv_gallery_tabbing', 'gallery_image_tabbing' );
 
