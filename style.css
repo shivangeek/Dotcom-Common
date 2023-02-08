@@ -1308,18 +1308,16 @@ h6 {
     font-family: var(--title-font);
 }
 
-p a {
+p a,
+a {
     color: var(--primary-color);
     text-decoration: underline !important;
     transition: 0.3s;
 }
 
-p a:hover {
-    color: var(--dark-color);
-}
-
+p a:hover,
 a:hover {
-    color: initial;
+    color: var(--dark-color);
 }
 
 .h1-title {
