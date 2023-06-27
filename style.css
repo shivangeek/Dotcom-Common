@@ -2716,7 +2716,7 @@ a.prev.page-numbers {
 /*========== End of Blog CSS ==========*/
 
 /*==========Responsive Start==========*/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
     .container {
         max-width: 1200px;
     }
